@@ -1,0 +1,111 @@
+/* ================================
+   GLOBAL BODY
+=================================*/
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at center, #000814 0%, #001d3d 60%, #000 100%);
+    color: white;
+    text-align: center;
+}
+
+/* ================================
+   HEADER
+=================================*/
+.header {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    padding: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px cyan;
+}
+
+/* ================================
+   SCORE BOARD STYLE
+=================================*/
+#scoreBoard {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ffff;
+    text-shadow: 0 0 8px cyan;
+}
+
+/* ================================
+   CANVAS
+=================================*/
+canvas {
+    display: block;
+    margin: auto;
+    border: 2px solid cyan;
+    box-shadow: 0 0 20px cyan;
+    border-radius: 10px;
+}
+
+/* ================================
+   CONTROLS
+=================================*/
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ================================
+   BUTTON STYLE
+=================================*/
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(45deg, orange, gold);
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(45deg, red, darkred);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px red;
+}
+
+/* ================================
+   GAME OVER SCREEN
+=================================*/
+#gameOverScreen {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 20px red;
+    animation: popUp 0.3s ease;
+}
+
+@keyframes popUp {
+    from {
+        transform: translateX(-50%) scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+    }
+}
+
+/* ================================
+   HIDDEN CLASS
+=================================*/
+.hidden {
+    display: none;
+}
